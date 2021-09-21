@@ -1,0 +1,40 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+// Font Variables
+$font-family: 'Playfair Display', serif;
+
+// Styles
+body {
+  font-family: $font-family;
+//   font-weight: normal;
+}
+
+// Custom 
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.scroll-to-top{
+    right: 50px;
+    bottom: 50px;
+}
+
+.service-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.work-style{
+    &:hover{
+        // background:#fff !important;
+        -webkit-box-shadow:0 15px 30px rgba(60,72,88,0.15);
+        box-shadow:0 15px 30px rgba(60,72,88,0.15);
+        -webkit-transform:translateY(-20px);
+        transform:translateY(-20px)
+    }
+}
+
+
