@@ -17,11 +17,11 @@ var waypoint = new Waypoint({
     else{
       header.classList.remove('shadow');
       header.classList.remove('animate__fadeInDown');
-      scrollTop.style.display='non';
+      scrollTop.style.display='none';
       scrollTop.classList.remove('animate__fadeInBottomRight');
     }
   },
-  offset: '75%'
+  offset: '68%'
 });
 
 ScrollReveal({

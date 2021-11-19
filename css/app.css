@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11500,7 +11500,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 html {
@@ -11517,10 +11517,22 @@ html {
   width: 50px;
 }
 
+#typed {
+  font-size: 50px;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: #198754;
+}
+
+.work-style {
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
 .work-style:hover {
-  -webkit-box-shadow: 0 15px 30px rgba(60, 72, 88, 0.15);
-  box-shadow: 0 15px 30px rgba(60, 72, 88, 0.15);
-  -webkit-transform: translateY(-20px);
-  transform: translateY(-20px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 /*# sourceMappingURL=app.css.map */

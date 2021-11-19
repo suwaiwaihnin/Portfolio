@@ -61,9 +61,14 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-5 col-md-5 col-sm-5 order-md-first mt-5 mt-md-0">
-                        <p class="text-muted mb-1">Hi I'm</p>
-                        <h1 class="text-success text-uppercase fs-1 fw-bold">Su Wai Wai Hnin</h1>
-                        <p class="mt-4 text-muted fs-6">I'm a <b>Web Developer</b>. I'm experienced in small and medium web app and website.</p>
+                            <p class="text-muted mb-1 fs-5">Hi I'm a</p>
+                            <div id="typed-strings">
+                                <h1>Web Developer</h1>   
+                            </div>
+                            <span id="typed"></span>
+                        <p class="mt-4 text-muted fs-6">
+                             I'm Su Wai Wai Hnin.I'm experienced in small and medium web app and website.
+                        </p>
                         <a href="#project" class="btn btn-success px-3 mt-3">My Works</a>
                     </div>
                 </div>
@@ -166,7 +171,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 content "  >
-                        <div class="card text-center mt-3 mt-md-0  shadow work-style"  >
+                        <div class="card text-center mt-3 mt-md-0  shadow work-style bg-light"  >
                             <div class="pt-4">
                                 <!-- <i class="fas fa-code text-success"></i> -->
                                 <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -231,7 +236,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 content">
-                        <div class="card text-center mt-3 mt-md-0 shadow work-style">
+                        <div class="card text-center mt-3 mt-md-0 shadow work-style bg-light">
                             <div class="pt-4">
                                 <!-- <i class="fas fa-desktop text-success"></i> -->
                                 <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -372,7 +377,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 content">
-                        <div class="card text-center mt-3 mt-md-0 shadow work-style">
+                        <div class="card text-center mt-3 mt-md-0 shadow work-style bg-light">
                             <div class="pt-4">
                                 <!-- <i class="fas fa-people-carry text-success"></i> -->
                                 <svg class="service-icon w-20 h-20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -538,6 +543,8 @@
 <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 <!-- custom js -->
 <script src="./js/app.js"></script>
+<!-- typing js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <!-- Preloader Js -->
 <script>
 window.onload = function loader() { 
@@ -548,6 +555,15 @@ window.onload = function loader() {
 
   }, 1300);
 }
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    loop: true,
+    showCursor: false,
+    // cursorChar : '|'
+
+  });
+
 
 </script>
 </html>

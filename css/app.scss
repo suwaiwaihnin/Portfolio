@@ -1,8 +1,8 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 // Font Variables
-$font-family: 'Playfair Display', serif;
+$font-family: 'Roboto Slab', serif;
 
 // Styles
 body {
@@ -27,13 +27,20 @@ html{
     width: 50px;
 }
 
+#typed{
+    font-size: 50px;
+    font-weight: 100;
+    text-transform:capitalize;
+    color: #198754;
+}
+
+.work-style{
+    transition: transform 250ms;
+}
+
 .work-style{
     &:hover{
-        // background:#fff !important;
-        -webkit-box-shadow:0 15px 30px rgba(60,72,88,0.15);
-        box-shadow:0 15px 30px rgba(60,72,88,0.15);
-        -webkit-transform:translateY(-20px);
-        transform:translateY(-20px)
+        transform:translateY(-10px)
     }
 }
 
